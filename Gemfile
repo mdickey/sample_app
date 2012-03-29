@@ -8,6 +8,7 @@ gem 'pg', '0.12.2'
 
 group :development, :test do
 	gem 'rspec-rails', '2.8.1'
+	gem 'guard-rspec', '0.5.5'
 end
 
 
@@ -27,10 +28,17 @@ end
 gem 'jquery-rails', '2.0.0'
 
 group :test do
+	gem 'rspec-rails', '2.8.1'
 	gem 'capybara', '1.1.2'
+	# System dependent gems
+	gem 'rb-fsevent', '0.4.3.1', :require => false
+	gem 'growl', '1.0.3'
+	gem 'guard-spork', '0.3.2'
+	gem 'spork', '0.9.0'
 end
 
 
+ 
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
