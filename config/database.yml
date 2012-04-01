@@ -16,7 +16,7 @@ development:
   host: localhost
   adapter: postgresql
   encoding: unicode
-  database: db/sample_app_development
+  database: sample_app_development
   pool: 5
   username: mdickey62
   password:
@@ -44,7 +44,7 @@ test:
   encoding: unicode
   database: sample_app_test
   pool: 5
-  username: sample_app
+  username: mdickey62
   password:
 
 production:
@@ -52,5 +52,5 @@ production:
   encoding: unicode
   database: sample_app_production
   pool: 5
-  username: sample_app
+  username: mdickey62
   password:
